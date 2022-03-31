@@ -4,6 +4,14 @@
 @font-face {
   font-family: "Raleway Bold";
   src: url("../fonts/raleway/raleway-bold.ttf") format("truetype"); }
+* {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0; }
+
 html {
   display: flex;
   font-family: "Raleway Regular";
@@ -12,20 +20,66 @@ html {
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  overflow: hidden;
-  max-width: 1440px; }
+  max-width: 1440px;
+  width: 100%;
+  overflow-x: hidden; }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
+.banner {
+  align-items: end;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../../../assets/images/header/banner/hero.svg") no-repeat center;
+  height: 352px;
+  max-width: 1440px;
+  width: 100%; }
+
+.banner__description {
+  display: flex;
+  flex-direction: column;
+  max-width: 1136px;
+  width: 100%;
+  height: 170px;
+  margin-bottom: 32px; }
+
+.banner__title {
+  display: flex;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 61px;
+  margin-bottom: 16px; }
+
+.banner__subtitle {
+  display: flex;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 16px; }
+
+.banner__button__view {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #2A7AE4;
+  color: #FFFFFF;
+  padding: 16px;
+  width: 130px;
+  height: 51px;
+  cursor: pointer; }
+
 .topo {
   display: flex;
   flex-direction: row;
   height: 115px;
-  width: 1136px;
+  max-width: 1136px;
+  width: 100%;
   justify-content: space-between;
   align-items: center; }
 
@@ -45,11 +99,13 @@ header {
   justify-content: center;
   padding: 8px;
   position: relative;
-  height: 32px;
-  width: 350px; }
+  height: 40px;
+  width: 393px; }
 
 .search__bar::placeholder {
   color: #A2A2A2;
+  font-family: 'Ralaway Regular';
+  font-weight: 400;
   font-size: 14px; }
 
 .search__icon {
@@ -58,14 +114,27 @@ header {
   top: calc(50% - 12px);
   right: 15px; }
 
+.login {
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #2A7AE4;
+  box-sizing: border-box;
+  color: #2A7AE4;
+  cursor: pointer;
+  display: flex;
+  height: 51px;
+  justify-content: center;
+  width: 182px; }
+
 .logo__container {
   align-items: center;
   display: flex;
-  height: 30px;
-  margin-right: 20px; }
+  margin-right: 32px;
+  text-decoration: none;
+  cursor: pointer; }
 
 .logo__image {
-  height: 24px;
+  height: 30px;
   margin-right: 5px; }
 
 .logo__alura, .logo__geek {
@@ -78,5 +147,23 @@ header {
 
 .logo__geek {
   color: #464646; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%; }
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 1440px;
+  height: 102px;
+  padding: 32px;
+  width: 100%; }
 
 /*# sourceMappingURL=alura-geek.css.map */

@@ -15,12 +15,14 @@
 	justify-content: center;
 	padding: 8px;
 	position: relative;
-	height: 32px;
-	width: 350px;
+	height: 40px;
+	width: 393px;
 }
 
 .search__bar::placeholder {
 	color: $search__placeholder;
+	font-family: 'Ralaway Regular';
+	font-weight: 400;
 	font-size: 14px;
 }
 

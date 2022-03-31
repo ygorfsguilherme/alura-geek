@@ -8,6 +8,16 @@
 	src: url('../fonts/raleway/raleway-bold.ttf') format("truetype");
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+
 html {
 	display: flex;
 	font-family: "Raleway Regular";
@@ -17,14 +27,20 @@ html {
 
 body {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	overflow: hidden;
 	max-width: 1440px;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 @import 'color/color.scss';
 @import 'header/header.scss';
-@import 'header/topo.scss';
-@import 'header/search-bar.scss';
-@import 'header/logo/logo.scss';
+@import 'header/banner.scss';
+@import 'header/top/top.scss';
+@import 'header/top/search-bar.scss';
+@import 'header/top/login.scss';
+@import 'header/top/logo.scss';
+@import 'footer/footer.scss';
+@import 'footer/copyright.scss';
 
