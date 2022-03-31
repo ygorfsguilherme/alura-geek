@@ -1,0 +1,53 @@
+.contact-me__form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.input__name__container {
+	position: relative;
+	margin-bottom: 16px;
+}
+
+.input__name__label {
+	position: absolute;
+	color: $graylight;
+	margin: 4px;
+}
+
+.input__name, .input__mensagem {
+	box-sizing: border-box;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0, 0.3);
+	border: none;
+	border-radius: 4px;
+	display: flex;
+	padding: 12px 4px 4px 4px;
+	width: 100%;
+	outline: 0;
+}
+
+.input__name {
+	height: 56px;
+}
+
+.input__mensagem {
+	height: 82px;
+
+	&::placeholder {
+		color: $graylight;
+	}
+}
+
+.form__button {
+	background: $blue;
+	color: $white;
+	margin-top: 8px;
+	width: 165px;
+	height: 51px;
+	border: none;
+
+	&:hover{
+		background: $blue80;
+		transition: ease-in-out .6s;
+	}
+}

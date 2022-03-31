@@ -1,7 +1,19 @@
+.top {
+	display: flex;
+	max-width: 1440px;
+	width: 100%;
+}
+
 .search__bar__container {
+	align-items: center;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	height: 115px;
+	justify-content: start;
+	max-width: 1136px;
+	margin: 0 20px;
+	position: relative;
+	width: 100%;
 }
 
 .search__bar {
@@ -12,23 +24,25 @@
 	outline: 0;
 	border-radius: 20px;
 	display: flex;
-	justify-content: center;
+	justify-content: start;
 	padding: 8px;
 	position: relative;
 	height: 40px;
 	width: 393px;
+	
+	&::placeholder {
+		color: $graylight;
+		font-family: 'Ralaway Regular';
+		font-weight: 400;
+		font-size: 14px;
+	}
+
+	.search__icon {
+		position: absolute;
+		height: 24px;
+		top: calc(50% - 12px);
+		right: 15px;
+	}
 }
 
-.search__bar::placeholder {
-	color: $search__placeholder;
-	font-family: 'Ralaway Regular';
-	font-weight: 400;
-	font-size: 14px;
-}
 
-.search__icon {
-	position: absolute;
-	height: 24px;
-	top: calc(50% - 12px);
-	right: 15px;
-}

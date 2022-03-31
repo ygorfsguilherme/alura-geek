@@ -1,11 +1,18 @@
 .copyright {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items:center;
 	box-sizing: border-box;
-	max-width: 1440px;
+	color: $gray;
+	display: flex;
+	flex-direction: column;
 	height: 102px;
+	justify-content: center;
+	max-width: 1440px;
 	padding:32px;
 	width: 100%;
+}
+
+.developer {
+	text-decoration: none;
+	font-weight: 700;
+	color: $gray;
 }

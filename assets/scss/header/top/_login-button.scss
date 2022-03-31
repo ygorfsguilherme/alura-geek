@@ -1,4 +1,4 @@
-.login {
+.login__button {
 	align-items: center;
 	background: $white;
 	border: 1px solid $blue;
@@ -8,5 +8,12 @@
 	display: flex;
 	height: 51px;
 	justify-content: center;
+	position: absolute;
+	right: 0px;
 	width: 182px;
+
+	&:hover{
+		background: $blue20;
+		transition: ease-in-out .6s;
+	}
 }

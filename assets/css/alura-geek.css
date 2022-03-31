@@ -12,6 +12,13 @@ h1, h2, h3, h4 {
   margin: 0;
   padding: 0; }
 
+ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: inherit; }
+
 html {
   display: flex;
   font-family: "Raleway Regular";
@@ -23,13 +30,7 @@ body {
   flex-direction: column;
   justify-content: center;
   max-width: 1440px;
-  width: 100%;
-  overflow-x: hidden; }
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  width: 100%; }
 
 .banner {
   align-items: end;
@@ -47,7 +48,7 @@ header {
   max-width: 1136px;
   width: 100%;
   height: 170px;
-  margin-bottom: 32px; }
+  margin: 20px 20px 32px 20px; }
 
 .banner__title {
   display: flex;
@@ -73,20 +74,25 @@ header {
   width: 130px;
   height: 51px;
   cursor: pointer; }
+  .banner__button__view:hover {
+    background: #5595E9;
+    transition: ease-in-out .6s; }
 
-.topo {
+.top {
+  display: flex;
+  max-width: 1440px;
+  width: 100%; }
+
+.search__bar__container {
+  align-items: center;
   display: flex;
   flex-direction: row;
   height: 115px;
+  justify-content: start;
   max-width: 1136px;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center; }
-
-.search__bar__container {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
+  margin: 0 20px;
+  position: relative;
+  width: 100%; }
 
 .search__bar {
   align-items: center;
@@ -96,25 +102,23 @@ header {
   outline: 0;
   border-radius: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   padding: 8px;
   position: relative;
   height: 40px;
   width: 393px; }
+  .search__bar::placeholder {
+    color: #A2A2A2;
+    font-family: 'Ralaway Regular';
+    font-weight: 400;
+    font-size: 14px; }
+  .search__bar .search__icon {
+    position: absolute;
+    height: 24px;
+    top: calc(50% - 12px);
+    right: 15px; }
 
-.search__bar::placeholder {
-  color: #A2A2A2;
-  font-family: 'Ralaway Regular';
-  font-weight: 400;
-  font-size: 14px; }
-
-.search__icon {
-  position: absolute;
-  height: 24px;
-  top: calc(50% - 12px);
-  right: 15px; }
-
-.login {
+.login__button {
   align-items: center;
   background: #FFFFFF;
   border: 1px solid #2A7AE4;
@@ -124,11 +128,17 @@ header {
   display: flex;
   height: 51px;
   justify-content: center;
+  position: absolute;
+  right: 0px;
   width: 182px; }
+  .login__button:hover {
+    background: #D4E4FA;
+    transition: ease-in-out .6s; }
 
 .logo__container {
   align-items: center;
   display: flex;
+  height: 50px;
   margin-right: 32px;
   text-decoration: none;
   cursor: pointer; }
@@ -148,22 +158,114 @@ header {
 .logo__geek {
   color: #464646; }
 
-footer {
+.footer__container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   max-width: 1440px;
+  width: 100%;
+  background: #EAF2FD;
+  color: #464646; }
+
+.contact-me__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 368px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 20px; }
+
+.contact-me__container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1136px;
+  height: 240px;
   width: 100%; }
 
-.copyright {
+.menu__footer {
+  display: flex;
+  flex-direction: row;
+  width: 50%; }
+
+.menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+
+.menu__footer__list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-self: center;
+  justify-content: space-between;
+  align-self: center;
+  color: #464646;
+  height: 100%; }
+  .menu__footer__list a:hover {
+    color: #A2A2A2;
+    text-decoration: underline; }
+
+.contact-me__title {
+  font-weight: 700;
+  margin-bottom: 8px; }
+
+.contact-me__form {
+  display: flex;
+  flex-direction: column;
+  width: 50%; }
+
+.input__name__container {
+  position: relative;
+  margin-bottom: 16px; }
+
+.input__name__label {
+  position: absolute;
+  color: #A2A2A2;
+  margin: 4px; }
+
+.input__name, .input__mensagem {
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  padding: 12px 4px 4px 4px;
+  width: 100%;
+  outline: 0; }
+
+.input__name {
+  height: 56px; }
+
+.input__mensagem {
+  height: 82px; }
+  .input__mensagem::placeholder {
+    color: #A2A2A2; }
+
+.form__button {
+  background: #2A7AE4;
+  color: #FFFFFF;
+  margin-top: 8px;
+  width: 165px;
+  height: 51px;
+  border: none; }
+  .form__button:hover {
+    background: #5595E9;
+    transition: ease-in-out .6s; }
+
+.copyright {
   align-items: center;
   box-sizing: border-box;
-  max-width: 1440px;
+  color: #464646;
+  display: flex;
+  flex-direction: column;
   height: 102px;
+  justify-content: center;
+  max-width: 1440px;
   padding: 32px;
   width: 100%; }
+
+.developer {
+  text-decoration: none;
+  font-weight: 700;
+  color: #464646; }
 
 /*# sourceMappingURL=alura-geek.css.map */
