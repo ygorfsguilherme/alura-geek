@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../fonts/raleway/raleway-regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../fonts/raleway/raleway-bold.ttf") format("truetype"); }
+html {
+  display: flex;
+  font-family: "Raleway Regular";
+  font-weight: 500;
+  justify-content: center; }
+
+body {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 1440px; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.topo {
+  display: flex;
+  flex-direction: row;
+  height: 115px;
+  width: 1136px;
+  justify-content: space-between;
+  align-items: center; }
+
+.search__bar__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.search__bar {
+  align-items: center;
+  background: #F5F5F5;
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+  height: 32px;
+  width: 350px; }
+
+.search__bar::placeholder {
+  color: #A2A2A2;
+  font-size: 14px; }
+
+.search__icon {
+  position: absolute;
+  height: 24px;
+  top: calc(50% - 12px);
+  right: 15px; }
+
+.logo__container {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  margin-right: 20px; }
+
+.logo__image {
+  height: 24px;
+  margin-right: 5px; }
+
+.logo__alura, .logo__geek {
+  font-size: 18px;
+  font-family: "Raleway Bold";
+  font-weight: 700; }
+
+.logo__alura {
+  color: #2A7AE4; }
+
+.logo__geek {
+  color: #464646; }
+
+/*# sourceMappingURL=alura-geek.css.map */

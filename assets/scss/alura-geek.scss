@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "Raleway Regular";
+	src: url('../fonts/raleway/raleway-regular.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "Raleway Bold";
+	src: url('../fonts/raleway/raleway-bold.ttf') format("truetype");
+}
+
+html {
+	display: flex;
+	font-family: "Raleway Regular";
+	font-weight: 500;
+	justify-content: center;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	max-width: 1440px;
+}
+
+@import 'color/color.scss';
+@import 'header/header.scss';
+@import 'header/topo.scss';
+@import 'header/search-bar.scss';
+@import 'header/logo/logo.scss';
+

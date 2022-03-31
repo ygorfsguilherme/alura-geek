@@ -1,0 +1,25 @@
+.logo__container {
+	align-items: center;
+	display: flex;
+	height: 30px;
+	margin-right: 20px;
+}
+
+.logo__image {
+	height: 24px;
+	margin-right: 5px;
+}
+
+.logo__alura, .logo__geek {
+	font-size: 18px;
+	font-family: "Raleway Bold";
+	font-weight: 700;
+}
+
+.logo__alura {
+	color: $blue;
+}
+
+.logo__geek {
+	color: $gray;
+}

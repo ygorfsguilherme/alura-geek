@@ -1,0 +1,32 @@
+.search__bar__container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.search__bar {
+	align-items: center;
+	background: $search;
+	box-sizing: border-box;
+	border: none;
+	outline: 0;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	padding: 8px;
+	position: relative;
+	height: 32px;
+	width: 350px;
+}
+
+.search__bar::placeholder {
+	color: $search__placeholder;
+	font-size: 14px;
+}
+
+.search__icon {
+	position: absolute;
+	height: 24px;
+	top: calc(50% - 12px);
+	right: 15px;
+}
