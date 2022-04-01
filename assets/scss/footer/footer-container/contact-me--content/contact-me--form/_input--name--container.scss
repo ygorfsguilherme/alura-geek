@@ -1,0 +1,22 @@
+.input__name__container {
+	position: relative;
+	margin-bottom: 16px;
+}
+
+.input__name__label {
+	position: absolute;
+	color: $graylight;
+	margin: 4px;
+}
+
+.input__name {
+	box-sizing: border-box;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0, 0.3);
+	border: none;
+	border-radius: 4px;
+	display: flex;
+	padding: 12px 4px 4px 4px;
+	width: 100%;
+	outline: 0;
+	height: 56px;
+}

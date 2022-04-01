@@ -1,0 +1,18 @@
+.contact-me__container {
+	display: flex;
+	max-width: 1136px;
+	width: 100%;
+}
+
+@media screen and (min-width: 0) {
+	.contact-me__container {
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 690px) {
+	.contact-me__container {
+		flex-direction: row;
+	}
+}
+

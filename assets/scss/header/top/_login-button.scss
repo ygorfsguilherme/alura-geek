@@ -1,3 +1,10 @@
+.logo__content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
 .login__button {
 	align-items: center;
 	background: $white;
@@ -8,12 +15,33 @@
 	display: flex;
 	height: 51px;
 	justify-content: center;
-	position: absolute;
 	right: 0px;
-	width: 182px;
 
 	&:hover{
 		background: $blue20;
 		transition: ease-in-out .6s;
+	}
+}
+
+
+@media screen and (min-width: 0) {
+	.login__button {
+		width: 123px;
+		height: 40px;
+		position: relative;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.login__button {
+		width: 166px;
+		position: absolute;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.login__button {
+		width: 182px;
+		position: absolute;
 	}
 }

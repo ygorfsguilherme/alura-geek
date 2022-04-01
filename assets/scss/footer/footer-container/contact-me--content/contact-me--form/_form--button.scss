@@ -1,0 +1,13 @@
+.form__button {
+	background: $blue;
+	color: $white;
+	margin-top: 8px;
+	width: 165px;
+	height: 51px;
+	border: none;
+
+	&:hover{
+		background: $blue80;
+		transition: ease-in-out .6s;
+	}
+}

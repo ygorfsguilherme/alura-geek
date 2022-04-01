@@ -1,0 +1,16 @@
+.contact-me__form {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 0) {
+	.contact-me__form {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.contact-me__form {
+		width: 50%;
+	}
+}

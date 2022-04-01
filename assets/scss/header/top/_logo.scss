@@ -25,3 +25,19 @@
 .logo__geek {
 	color: $gray;
 }
+
+@media screen and (min-width: 0) {
+	.logo__container {
+		width: 100px;
+		height: 28px;
+		margin-right: 16px;
+	}
+
+	.logo__alura, .logo__geek {
+		font-size: 14px;
+	}
+
+	.logo__image {
+		height: 18px;
+	}
+}

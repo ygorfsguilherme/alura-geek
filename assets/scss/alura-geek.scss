@@ -1,30 +1,7 @@
-@font-face {
-	font-family: "Raleway Regular";
-	src: url('../fonts/raleway/raleway-regular.ttf') format("truetype");
-}
-
-@font-face {
-	font-family: "Raleway Bold";
-	src: url('../fonts/raleway/raleway-bold.ttf') format("truetype");
-}
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
-h1, h2, h3, h4 {
-	margin: 0;
-	padding: 0;
-}
-
-ul, li, a {
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	list-style: none;
-	color: inherit;
-}
+// Extras
+@import 'extra/fonts.scss';
+@import 'extra/color.scss';
+@import 'extra/reset.scss';
 
 html {
 	display: flex;
@@ -41,15 +18,22 @@ body {
 	width: 100%;
 }
 
-@import 'color/color.scss';
 @import 'header/banner.scss';
-@import 'header/top/top.scss';
+@import 'header/top.scss';
+@import 'header/top/search-bar-container.scss';
 @import 'header/top/search-bar.scss';
 @import 'header/top/login-button.scss';
 @import 'header/top/logo.scss';
-@import 'footer/footer.scss';
-@import 'footer/contact-me.scss';
-@import 'footer/form/contact-me--title.scss';
-@import 'footer/form/form.scss';
+
+@import 'footer/footer-container.scss';
+@import 'footer/footer-container/contact-me--content.scss';
+@import 'footer/footer-container/contact-me--content/contact-me--container.scss';
+@import 'footer/footer-container/contact-me--content/menu--footer.scss';
+@import 'footer/footer-container/contact-me--content/contact-me--form.scss';
+@import 'footer/footer-container/contact-me--content/contact-me--form/contact-me--title.scss';
+@import 'footer/footer-container/contact-me--content/contact-me--form/input--name--container.scss';
+@import 'footer/footer-container/contact-me--content/contact-me--form/input--mensagem.scss';
+@import 'footer/footer-container/contact-me--content/contact-me--form/form--button.scss';
+
 @import 'footer/copyright.scss';
 
