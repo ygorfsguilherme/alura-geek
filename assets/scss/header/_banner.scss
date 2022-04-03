@@ -22,7 +22,6 @@
 .banner__title {
 	display: flex;
 	font-weight: 700;
-	font-size: 52px;
 	line-height: 61px;
 	margin-bottom: 16px;
 }
@@ -30,23 +29,57 @@
 .banner__subtitle {
 	display: flex;
 	font-weight: 700;
-	font-size: 22px;
 	line-height: 26px;
 	margin-bottom: 16px;
 }
 
 .banner__button__view {
+	align-items: center;
 	display: flex;
-	flex-direction: column;
 	box-sizing: border-box;
 	background: $blue;
 	color: $white;
+	flex-direction: column;
+	height: 51px;
+	justify-content: center;
 	padding: 16px;
 	width: 130px;
-	height: 51px;
 	cursor: pointer;
+
 	&:hover{
 		background: $blue80;
 		transition: ease-in-out .6s;
+	}
+}
+
+@media screen and (min-width: 0) {
+	.banner__title {
+		font-size: 22px;
+	}
+
+	.banner__subtitle {
+		font-size: 14px;
+	}
+
+	.banner__button__view {
+		width: 119px;
+		height: 40px;
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	.banner__title {
+		font-size: 52px;
+	}
+
+	.banner__subtitle {
+		font-size: 22px;
+	}
+
+	.banner__button__view {
+		width: 130px;
+		height: 51px;
 	}
 }
