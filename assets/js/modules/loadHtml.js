@@ -6,5 +6,5 @@ function loadTemplate(template, local){
 	.then( t => addTemplate.innerHTML = t);
 }
 
-loadTemplate('../../../page/templates/header.html', '[data-header]');
-loadTemplate('../../../page/templates/footer.html', '[data-footer]');
+loadTemplate('../../page/templates/header.html', '[data-header]');
+loadTemplate('../../page/templates/footer.html', '[data-footer]');
