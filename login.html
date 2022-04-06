@@ -20,19 +20,21 @@
 
 		<section class="login__container">			
 			<h3 class="u-title__section">Iniciar Sessão</h3>
-			<form action="cadastra-produtos.html">
+			<form>
 				
 				<div class="u-input__container">			
 					<label class="u-input__label" for="email">Escreva seu email</label>
-					<input class="u-input" type="email" id="email">
+					<input class="u-input" type="email" id="email" data-email>
 				</div>
 
 				<div class="u-input__container">			
 					<label class="u-input__label" for="password">Escreva sua senha</label>
-					<input class="u-input" type="password" id="password">
+					<input class="u-input" type="password" id="password" data-password>
 				</div>
 
-				<button class="u-button" type="submit">Entrar</button>
+				<span class="alert">Email/Senha invalido!</span>
+
+				<button class="u-button" type="submit" data-login >Entrar</button>
 			</form>
 		</section> 
 
