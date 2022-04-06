@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Alura Geek - Cadastra Produto</title>
+
+	<link rel="stylesheet" href="../assets/css/normalize.css">
+	<link rel="stylesheet" href="../assets/css/alura-geek.css">
+
+	<script type="module" src="../assets/js/main.js" defer></script>
+
+</head>
+<body>
+
+	<header data-header></header>
+
+	<main>
+		<section class="cadastra__container">			
+			<h3 class="u-title__section">Adicionar novo produto</h3>
+
+			<div class="input__file__container">
+				<div class="input__drop">
+					<span class="img"></span>
+					<p></p>
+				</div>
+
+				<span class="or">ou</span>
+
+				<label class="input__file__label" for="file">
+					Escolha uma imagem
+				</label>
+
+				<input hidden type="file" id="file">
+			</div>
+
+			<div class="u-input__container">			
+				<label class="u-input__label" for="name">Nome do produto</label>
+				<input class="u-input" type="text" id="name">
+			</div>
+
+			<div class="u-input__container">			
+				<label class="u-input__label" for="sale">Preço do produto</label>
+				<input class="u-input" type="text" id="sale">
+			</div>
+
+			<textarea class="u-textarea" placeholder="Descrição do produto"></textarea>
+
+			<button class="u-button" type="submit">Adicionar Produto</button>
+		</section>
+	</main>
+
+	<footer data-footer></footer>
+
+</body>
+</html>

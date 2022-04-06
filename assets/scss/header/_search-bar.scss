@@ -25,6 +25,10 @@
 	height: 40px;
 	z-index: 4;
 	width: 250px;
+
+	&:hover, &:focus {
+		box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2)
+	}
 	
 	&::placeholder {
 		color: $graylight;
@@ -50,7 +54,6 @@
 
 	.search__bar__icon:hover ~ .search__bar__input {
 		display: flex;
-		box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
 	}
 }
 

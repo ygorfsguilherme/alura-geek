@@ -3,39 +3,33 @@
 @import 'extra/color.scss';
 @import 'extra/reset.scss';
 
-html {
-	display: flex;
-	font-family: "Raleway Regular";
-	font-weight: 500;
-	justify-content: center;
-}
+// Utility
+@import 'utility/input.scss';
+@import 'utility/textarea.scss';
+@import 'utility/button.scss';
+@import 'utility/title__section.scss';
 
-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	max-width: 1440px;
-	width: 100%;
-}
-
+// Header
 @import 'header/banner.scss';
-@import 'header/top.scss';
-@import 'header/top/search-bar-container.scss';
-@import 'header/top/search-bar.scss';
-@import 'header/top/login-button.scss';
-@import 'header/top/logo.scss';
+@import 'header/search-bar-container.scss';
+@import 'header/search-bar.scss';
+@import 'header/login.scss';
+@import 'header/logo.scss';
 
-@import 'main/main.scss';
+// Main
+@import 'main.scss';
+@import 'main/login/login.scss';
+@import 'main/cadastra-produtos/cadastra-produtos.scss';
+@import 'main/cadastra-produtos/input__file__conteiner.scss';
 
+// Footer
 @import 'footer/footer-container.scss';
 @import 'footer/footer-container/contact-me--content.scss';
 @import 'footer/footer-container/contact-me--content/contact-me--container.scss';
 @import 'footer/footer-container/contact-me--content/menu--footer.scss';
 @import 'footer/footer-container/contact-me--content/contact-me--form.scss';
 @import 'footer/footer-container/contact-me--content/contact-me--form/contact-me--title.scss';
-@import 'footer/footer-container/contact-me--content/contact-me--form/input--name--container.scss';
-@import 'footer/footer-container/contact-me--content/contact-me--form/input--mensagem.scss';
-@import 'footer/footer-container/contact-me--content/contact-me--form/form--button.scss';
 
+// Copyright
 @import 'footer/copyright.scss';
 

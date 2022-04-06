@@ -1,0 +1,52 @@
+.logo__content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo__content {
+	.u-button {
+		background: $white;
+		border: 1px solid $blue;
+		color: $blue;
+		right: 0px;
+
+		&:hover{
+			background: $blue20;
+			transition: ease-in-out .6s;
+		}
+	}
+}
+
+@media screen and (min-width: 0) {
+	.logo__content {
+		.u-button {
+			margin-top: 0;
+			width: 123px;
+			height: 40px;
+			position: relative;
+
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.logo__content {
+		.u-button {
+			width: 166px;
+			position: absolute;
+
+		}
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.logo__content {
+		.u-button {
+			width: 182px;
+			position: absolute;
+
+		}
+	}
+}

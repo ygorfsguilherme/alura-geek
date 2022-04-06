@@ -16,3 +16,23 @@ ul, li, a {
 	list-style: none;
 	color: inherit;
 }
+
+html {
+	display: flex;
+	font-family: "Raleway Regular";
+	font-weight: 500;
+	justify-content: center;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 1440px;
+	width: 100%;
+}
+
+header, main {
+	display: flex;
+	justify-content: center;
+}

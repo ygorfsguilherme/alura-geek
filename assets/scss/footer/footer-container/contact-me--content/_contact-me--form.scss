@@ -1,6 +1,10 @@
 .contact-me__form {
 	display: flex;
 	flex-direction: column;
+
+	.u-button {
+		width: 165px;
+	}
 }
 
 @media screen and (min-width: 0) {
