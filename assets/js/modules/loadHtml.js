@@ -13,5 +13,5 @@ function loadTemplate(file, local){
   rawFile.send(null);
 }
 
-loadTemplate('../../../page/templates/header.html', '[data-header]');
-loadTemplate('../../../page/templates/footer.html', '[data-footer]');
+loadTemplate('../../../../page/templates/header.html', '[data-header]');
+loadTemplate('../../../../page/templates/footer.html', '[data-footer]');
