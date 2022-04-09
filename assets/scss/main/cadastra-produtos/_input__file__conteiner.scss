@@ -1,7 +1,6 @@
 .input__file__container {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	margin: 16px 0px;
 }
 
@@ -11,10 +10,17 @@
 	color: $black80;
 	display: flex;
 	flex-direction: column;
-	height: 152px;
+	height: 175px;
 	justify-content: space-evenly;
 	text-align: center;
-	width: 100%;
+	width: 175px;
+	overflow: hidden;
+
+	img {
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
 }
 
 .input__file__label {

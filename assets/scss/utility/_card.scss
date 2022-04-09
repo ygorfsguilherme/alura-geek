@@ -1,0 +1,40 @@
+.u-card__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	flex-flow: row wrap;
+}
+
+.u-card {
+	display: flex;
+	flex-direction: column;
+	height: 252px;
+	width: 176px;
+	color: $gray;
+	margin: 20px 20px 20px 0px;
+}
+
+.u-card__image {
+	height: 174px;
+	width: 176px;
+}
+
+.u-card__tile {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+	margin-top: 8px;
+}
+
+.u-card__price {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	margin-top: 8px;
+}
+
+.u-card__link {
+	color: $blue;
+	line-height: 19px;
+	margin-top: 8px;
+}
