@@ -2,11 +2,13 @@ import * as loadHtml from "./modules/loadHtml.js"
 import {createProduct} from "./modules/createProduct.js"
 import {getData} from "./modules/createProduct.js"
 import {Card} from "./modules/createCard.js"
+import * as logado from "./modules/logado.js"
 
 function user(){
 	localStorage.setItem('email','alura@email.com')
 	localStorage.setItem('password','123456')
 }
+user()
 
 if (!localStorage.getItem('products')) {
 	const catalogo = () => {

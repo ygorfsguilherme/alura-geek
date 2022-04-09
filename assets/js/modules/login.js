@@ -6,7 +6,8 @@ document.querySelector('[data-login]').addEventListener('click', (event) => {
 
 	if(email == localStorage.getItem('email') && password == localStorage.getItem('password')){
 		localStorage.removeItem('logado')
-		localStorage.setItem('logado', 'true')
+		sessionStorage.setItem('logado', true)
+		console.log('logado')
 		location.href = 'cadastra-produtos.html'
 	}else {
 		document.querySelector('.alert').style.display = 'flex';

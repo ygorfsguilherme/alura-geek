@@ -1,4 +1,4 @@
-function loadTemplate(file, local){
+export function loadTemplate(file, local){
   let addTemplate = document.querySelector(`${local}`);
 
   let rawFile = new XMLHttpRequest();
