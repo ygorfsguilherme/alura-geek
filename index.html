@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="assets/css/alura-geek.min.css">
 
 	<script type="module" src="assets/js/main.js" defer></script>
+	<script type="module" src="assets/js/home.js" defer></script>
 
 </head>
 <body>
@@ -22,27 +23,29 @@
 			<h1 class="banner__title">Dezembro Promocional</h1>
 			<h3 class="banner__subtitle">Produtos selecionados com 33% de desconto</h3>
 
-			<a class="u-button">Ver Consoles</a>
+			<a class="u-button" href="#consoles">Ver Consoles</a>
 		</div>
 
 	</div>
 
 	<main>
 		<div class="main__container">
-			<section>
+			<section id="starwars">
 				<h2 class="u-title__section">Star Wars</h2>
 				<div class="u-card__container" data-card-starwars></div>
 			</section>
 
-			<section>
+			<section id="consoles">
 				<h2 class="u-title__section">Consoles</h2>
 				<div class="u-card__container" data-card-consoles></div>
 			</section>
 
-			<section>
+			<section id="diversos">
 				<h2 class="u-title__section">Diversos</h2>
 				<div class="u-card__container" data-card-diversos></div>
 			</section>
+
+			<a class="u-button" href="all-products.html">Ver todos os produtos</a>
 		</div>
 	</main>
 

@@ -4,6 +4,7 @@ export class Card{
     this.template = template;
     this.targetElement = targetElement;
     this.classElement = classElement;
+    this.id = infoElement[0].ID;
   }
 
   create(){
@@ -30,6 +31,7 @@ export class Card{
     let card = document.querySelector(targetElement)
     let element = document.createElement('div')
     element.classList.add(classElement)
+    element.setAttribute('id', this.id)
     element.innerHTML = temp
     card.appendChild(element)
   }

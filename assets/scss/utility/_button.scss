@@ -2,6 +2,7 @@
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	flex-direction: row;
 }
 
 .u-button {
@@ -16,8 +17,26 @@
 	height: 51px;
 	border: none;
 
+	&--small{
+		max-width: 180px;
+	}
+
+	&--disable {
+		display: none;
+	}
+
+	&--white {
+		background: $white;
+		border: 1px solid $blue;
+		color: $blue;
+	}
+
 	&:hover{
 		background: $blue80;
 		transition: ease-in-out .6s;
+	}
+
+	&:active {
+		transform: scale(0.8);
 	}
 }

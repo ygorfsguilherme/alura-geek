@@ -1,0 +1,20 @@
+.product {
+	display: flex;
+	width: 100%;
+}
+
+.product__container {
+	display: flex;
+	flex-direction: row;
+	color: $gray;
+}
+
+.product__image {
+	width: 300px;
+	height: 300px;
+	margin-right: 10px;
+}
+
+.product__title, .product__price {
+	font-weight: 700;
+}

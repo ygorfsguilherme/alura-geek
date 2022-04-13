@@ -1,4 +1,5 @@
 import {generateID} from "./generateID.js"
+import {getData} from "./getData.js"
 
 export function createProduct(item){
 	const db = getData()
@@ -8,9 +9,4 @@ export function createProduct(item){
 	product.push(item)
 
 	localStorage.setItem('products', JSON.stringify(product))
-}
-
-export function getData(){
-	const db = localStorage.getItem('products')
-	return JSON.parse(db)
 }

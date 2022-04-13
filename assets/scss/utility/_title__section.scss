@@ -1,3 +1,9 @@
+.u-title__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 .u-title__section {
 	color: $black100;
 	margin: 16px 0;

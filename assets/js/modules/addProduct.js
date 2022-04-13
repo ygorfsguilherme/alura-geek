@@ -11,4 +11,5 @@ export const addProduct = document.querySelector('[data-addProduto]').addEventLi
 	const item = {ID, IMAGE, PRODUCT, PRICE, DESCRIPTION,CATEGORY}
 
 	createProduct(item)
+	location.href = 'all-products.html'
 });

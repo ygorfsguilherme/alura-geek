@@ -1,9 +1,12 @@
 import {loadTemplate} from './loadHtml.js';
+import {checkLogin} from './checkLogin.js';
 
-const login = sessionStorage.getItem('logado')
-console.log(login)
+let btnAdd = document.querySelector('[data-check-login]')
 
-if (login) {
+if (checkLogin()) {
 	loadTemplate('templates/adm.html', '[data-login-adm]')
-	console.log('Você esta logado')
+
+	if (btnAdd) {
+		document.querySelector('[data-check-login]').style.display = 'flex';
+	}
 }

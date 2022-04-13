@@ -18,3 +18,22 @@ export function loadTemplate(file, local){
 
 loadTemplate('templates/header.html', '[data-header]');
 loadTemplate('templates/footer.html', '[data-footer]');
+
+
+export function geneTemplate(file){
+    let response = '';
+    let rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+
+    rawFile.onreadystatechange = function (){
+      if(rawFile.readyState === 4){
+        if(rawFile.status === 200 || rawFile.status == 0){
+        response = rawFile.responseText
+      };
+
+    }
+  }
+
+  rawFile.send(null);
+  return response
+}
