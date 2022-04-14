@@ -6,7 +6,6 @@ import {showProduct} from './modules/showItem.js'
 function generateCardOtherProducts(){
 	const template = geneTemplate('templates/card.html')
 	const data = getData()
-	
 
 	for(let i = 0; i < data.length; i++){
 		let infoElement = [];

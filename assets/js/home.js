@@ -1,10 +1,11 @@
 import {getData} from './modules/getData.js'
 import {Card} from './modules/createCard.js'
+import {loadData} from './loadData.js'
 import {geneTemplate} from './modules/loadHtml.js'
 
 if (!localStorage.getItem('products')) {
 	const catalogo = () => {
-		const createBase = [];
+		const createBase = loadData();
 
 		localStorage.setItem('products', JSON.stringify(createBase))
 

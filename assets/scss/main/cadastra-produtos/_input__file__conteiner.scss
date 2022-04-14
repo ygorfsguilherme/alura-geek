@@ -42,7 +42,7 @@
 
 	.input__drop {
 		.img::before {
-			content: url('../images/main/cadastro/add-image.svg');
+			content: url('../images/icon/add-image.svg');
 			width: 33px;
 			height: 32px;
 		}
@@ -58,7 +58,7 @@
 		max-width: 282px;
 
 		.img::before {
-			content: url('../images/main/cadastro/no-image.svg');
+			content: url('../images/icon/no-image.svg');
 			width: 33px;
 			height: 32px;
 		}

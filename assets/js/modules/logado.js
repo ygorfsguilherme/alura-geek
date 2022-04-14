@@ -7,6 +7,15 @@ if (checkLogin()) {
 	loadTemplate('templates/adm.html', '[data-login-adm]')
 
 	if (btnAdd) {
-		document.querySelector('[data-check-login]').style.display = 'flex';
+		btnAdd.classList.remove('u-button--disable')
 	}
+
+	setTimeout(()=>{
+	const btnEdit = document.querySelectorAll('[data-check-edit]')
+	if(checkLogin()){
+		btnEdit.forEach(btn =>{
+			btn.classList.remove('u-card__edit--disable')
+		})
+	}
+}, 100)
 }

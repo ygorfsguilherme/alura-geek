@@ -1,16 +1,13 @@
 import {getData} from "./getData.js"
 import {Card} from "./createCard.js"
-
-const template = `<img class="u-card__image" src=IMAGE>
-<span class="u-card__tile" >PRODUCT</span>
-<span class="u-card__price">R$ PRICE</span>
-<a class="u-card__link" href="#">Ver produto</a>`
+import {geneTemplate} from "./loadHtml.js"
 
 function generateCardAll(){
+	const template = geneTemplate('templates/card.html')
 	const dataAll = getData()
 	let info = [];
 
-	for(let i = 0; i < dataAll.length; i++){
+	for(let i = 0; i < 6; i++){
 		info.push(dataAll[i])
 	}
 

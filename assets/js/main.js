@@ -27,3 +27,6 @@ setTimeout(()=>{
 		location.href = 'product.html'
 	}))
 }, 100)
+
+
+console.log(JSON.parse(localStorage.getItem('products')))
