@@ -4,5 +4,5 @@ export function getData(){
 }
 
 export function setData(data){
-	const db = localStorage.setItem('products', data)
+	const db = localStorage.setItem('products', JSON.stringify(data))
 }

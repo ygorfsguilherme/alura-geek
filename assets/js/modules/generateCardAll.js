@@ -5,14 +5,13 @@ import {geneTemplate} from "./loadHtml.js"
 function generateCardAll(){
 	const template = geneTemplate('templates/card.html')
 	const dataAll = getData()
-	let info = [];
 
-	for(let i = 0; i < 6; i++){
+	for(let i = 0; i < dataAll.length; i++){
+		let info = [];
 		info.push(dataAll[i])
+		const cards = new Card(info, template, '[data-all-products]', 'u-card')
+		cards.create()
 	}
-
-	const cards = new Card(info, template, '[data-all-products]', 'u-card')
-	cards.create()
 }
 
 generateCardAll()

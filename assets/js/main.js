@@ -2,6 +2,7 @@ import * as loadHtml from "./modules/loadHtml.js"
 import {createProduct} from "./modules/createProduct.js"
 import {getData} from "./modules/getData.js"
 import {Card} from "./modules/createCard.js"
+import {removeItem} from "./modules/removeItem.js"
 import * as logado from "./modules/logado.js"
 
 function user(){
@@ -28,5 +29,13 @@ setTimeout(()=>{
 	}))
 }, 100)
 
+setTimeout(()=>{
+	let btnRemove = document.querySelectorAll('[data-remove-item]')
+	btnRemove.forEach(btnRemove => btnRemove.addEventListener('click', (event)=>{
+		const id = event.target.parentElement.parentElement.id;
+		removeItem(id)
+		document.querySelector(`#${id}`).remove()
+	}))
+}, 100)
 
-console.log(JSON.parse(localStorage.getItem('products')))
+console.log(getData())
