@@ -7,6 +7,13 @@
 	position: absolute;
 	color: $graylight;
 	margin: 4px;
+	top: 20px;
+	font-size: 16px;
+
+	&--active {
+		top: 0px;
+		font-size: 14px;
+	}
 }
 
 .u-input {

@@ -1,4 +1,4 @@
-import {getData} from './modules/getData.js'
+import {getData, setData} from './modules/getData.js'
 import {Card} from './modules/createCard.js'
 import {loadData} from './loadData.js'
 import {geneTemplate} from './modules/loadHtml.js'
@@ -7,7 +7,7 @@ if (!localStorage.getItem('products')) {
 	const catalogo = () => {
 		const createBase = loadData();
 
-		localStorage.setItem('products', JSON.stringify(createBase))
+		setData(createBase)
 
 		const db_starting = []
 

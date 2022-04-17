@@ -1,19 +1,6 @@
 export function loadTemplate(file, local){
   let addTemplate = document.querySelector(`${local}`);
-
-  let rawFile = new XMLHttpRequest();
-  rawFile.open("GET", file, false);
-
-  rawFile.onreadystatechange = function (){
-    if(rawFile.readyState === 4){
-      if(rawFile.status === 200 || rawFile.status == 0){
-        addTemplate.innerHTML = rawFile.responseText;
-      };
-
-    }
-  }
-
-  rawFile.send(null);
+  addTemplate.innerHTML = geneTemplate(file)
 }
 
 loadTemplate('templates/header.html', '[data-header]');
@@ -24,13 +11,13 @@ if (document.querySelector('[data-modal]')) {
 }
 
 export function geneTemplate(file){
-    let response = '';
-    let rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
+  let response = '';
+  let rawFile = new XMLHttpRequest();
+  rawFile.open("GET", file, false);
 
-    rawFile.onreadystatechange = function (){
-      if(rawFile.readyState === 4){
-        if(rawFile.status === 200 || rawFile.status == 0){
+  rawFile.onreadystatechange = function (){
+    if(rawFile.readyState === 4){
+      if(rawFile.status === 200 || rawFile.status == 0){
         response = rawFile.responseText
       };
 

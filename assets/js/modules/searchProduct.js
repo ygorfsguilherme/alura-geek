@@ -11,7 +11,7 @@ let dataBase = getData()
 let palavra = []
 let localSearchProduct = document.querySelector('[data-search-product]')
 
-export const searchBar = document.querySelector('[data-searchbar-input]').addEventListener('keydown', (event)=>{
+export const searchBar = setTimeout(()=>{document.querySelector('[data-searchbar-input]').addEventListener('keydown', (event)=>{
 	let inputText = event.key
 	const valor = inputText.replace(/([^0-9a-zA-Z\s])/g, '').toLowerCase().split();
 	
@@ -37,4 +37,4 @@ export const searchBar = document.querySelector('[data-searchbar-input]').addEve
 			showItem()
 		}
 	}
-})
+})}, 100)

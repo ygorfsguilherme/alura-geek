@@ -3,7 +3,9 @@ import {Card} from './modules/createCard.js'
 import {geneTemplate} from './modules/loadHtml.js'
 import {showProduct} from './modules/showItem.js'
 
-showProduct(localStorage.getItem('ID'))
+let parans = new URLSearchParams(window.location.search)
+
+showProduct(parans.get('id'))
 
 export function generateCardOtherProducts(){
 	const template = geneTemplate('templates/card.html')
