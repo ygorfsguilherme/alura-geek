@@ -30,9 +30,14 @@ body {
 	justify-content: center;
 	max-width: 1440px;
 	width: 100%;
+	position: relative;
 }
 
 header, main {
 	display: flex;
 	justify-content: center;
+}
+
+header {
+	background: $white;
 }

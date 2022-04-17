@@ -5,17 +5,21 @@ import {showProduct} from './modules/showItem.js'
 
 showProduct(localStorage.getItem('ID'))
 
-function generateCardOtherProducts(){
+export function generateCardOtherProducts(){
 	const template = geneTemplate('templates/card.html')
 	const data = getData()
+	let limite = 6;
 
-	for(let i = 0; i < 6; i++){
-		let infoElement = [];
-		infoElement.push(data[i])
-		const card = new Card(infoElement, template, '[data-card-other-product]', 'u-card')
+	if(data.length < 6){
+		limite = data.length
+	}
+
+	for(let i = 0; i < limite; i++){
+		let otherProducts = [];
+		otherProducts.push(data[i])
+		const card = new Card(otherProducts, template, '[data-card-other-product]', 'u-card')
 		card.create()
 	}
 }
 
 generateCardOtherProducts()
-

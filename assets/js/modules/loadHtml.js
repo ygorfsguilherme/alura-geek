@@ -19,6 +19,9 @@ export function loadTemplate(file, local){
 loadTemplate('templates/header.html', '[data-header]');
 loadTemplate('templates/footer.html', '[data-footer]');
 
+if (document.querySelector('[data-modal]')) {
+  loadTemplate('templates/modal.html', '[data-modal]');
+}
 
 export function geneTemplate(file){
     let response = '';

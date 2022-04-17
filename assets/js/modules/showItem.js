@@ -23,3 +23,12 @@ export function showProduct(id){
 		}
 	}
 }
+
+export const showItem = ()=>{setTimeout(()=>{
+	let btn = document.querySelectorAll('[data-show-product]')
+	btn.forEach(btn => btn.addEventListener('click', (event)=>{
+		const id = event.target.parentElement.id;
+		localStorage.setItem('ID', id)
+		location.href = 'product.html'
+	}))
+}, 100)}
