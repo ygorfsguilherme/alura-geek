@@ -5,31 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<title>Alura Geek</title>
+	<link rel="stylesheet" href="/src/assets/css/style.css">
 
-	<link rel="stylesheet" href="assets/css/normalize.css">
-	<link rel="stylesheet" href="assets/css/alura-geek.min.css">
-
-	<script type="module" src="assets/js/main.js" defer></script>
-	<script type="module" src="assets/js/home.js" defer></script>
+	<script type="module" src="src/assets/js/main.js" defer></script>
+	<script type="module" src="src/assets/js/home.js" defer></script>
 
 </head>
 <body>
 
 	<header data-header></header>
 
-	<div class="banner">
+	<div class="l-banner">
+		<div class="l-container">
+			<h1 class="c-banner__title">Dezembro Promocional</h1>
+			<h3 class="c-banner__subtitle">Produtos selecionados com 33% de desconto</h3>
 
-		<div class="banner__description">
-			<h1 class="banner__title">Dezembro Promocional</h1>
-			<h3 class="banner__subtitle">Produtos selecionados com 33% de desconto</h3>
-
-			<a class="u-button" href="#consoles">Ver Consoles</a>
+			<a class="c-button" href="#consoles">Ver Consoles</a>
 		</div>
-
 	</div>
 
-	<main>
-		<div class="main__container">
+	<main class="l-main__container">
+		<div class="l-container">
 			<section data-search-product style="display: flex;flex-direction: row;"></section>
 
 			<section id="starwars">
@@ -47,7 +43,7 @@
 				<div class="u-card__container" data-card-diversos></div>
 			</section>
 
-			<a class="u-button" href="all-products.html">Ver todos os produtos</a>
+			<a class="c-button" href="src/view/pages/all-products.html">Ver todos os produtos</a>
 		</div>
 	</main>
 
