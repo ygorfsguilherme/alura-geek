@@ -1,0 +1,29 @@
+.c-button__container{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.c-button {
+	align-items: center;
+	background: $blue;
+	display: flex;
+	color: $white;
+	cursor: pointer;
+	justify-content: center;
+	width: 100%;
+	border: none;
+
+	&--disable {
+		display: none;
+	}
+
+	&:hover{
+		background: $blue80;
+		transition: ease-in-out .6s;
+	}
+
+	&:active {
+		transform: scale(0.8);
+	}
+}

@@ -1,0 +1,27 @@
+.c-logo {
+	align-items: center;
+	display: flex;
+	width: 100%;
+	text-decoration:none;
+	cursor: pointer;
+
+	.c-logo__image {
+		height: 22px;
+		margin-right: 5px;
+	}
+
+	.c-logo__alura, .c-logo__geek {
+		margin-top: 3px;
+		font-size: 16px;
+		font-family: "Raleway Bold";
+		font-weight: 700;
+	}
+
+	.c-logo__alura {
+		color: $blue;
+	}
+
+	.c-logo__geek {
+		color: $gray;
+	}
+}

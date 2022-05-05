@@ -1,0 +1,61 @@
+.l-banner {
+	align-items: center;
+	color: $white;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../images/header/banner/hero.svg") no-repeat center;
+	height: 352px;
+	max-width: 1440px;
+	width: 100%;
+	padding: 20px;
+
+	.c-button {
+		height: 51px;
+	}
+}
+
+.c-banner__title {
+	display: flex;
+	font-weight: 700;
+	line-height: 61px;
+	margin-bottom: 16px;
+}
+
+.c-banner__subtitle {
+	display: flex;
+	line-height: 26px;
+	margin-bottom: 16px;
+}
+
+@media screen and (min-width: 0) {
+	.c-banner__title {
+		font-size: 22px;
+	}
+
+	.c-banner__subtitle {
+		font-size: 14px;
+	}
+
+	.l-banner {
+		.c-button {
+			width: 119px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.c-banner__title {
+		font-size: 52px;
+	}
+
+	.c-banner__subtitle {
+		font-size: 22px;
+	}
+
+	.l-banner {
+		.c-button {
+			width: 130px;
+		}
+	}
+}

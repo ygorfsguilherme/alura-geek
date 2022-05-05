@@ -1,0 +1,31 @@
+.u-input__container {
+	position: relative;
+	margin-bottom: 16px;
+}
+
+.u-input__label {
+	position: absolute;
+	color: $graylight;
+	margin: 4px;
+	top: 20px;
+	font-size: 16px;
+}
+
+.u-input {
+	box-sizing: border-box;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0, 0.3);
+	border: none;
+	border-radius: 4px;
+	display: flex;
+	padding: 12px 4px 4px 4px;
+	width: 100%;
+	outline: 0;
+	height: 56px;
+
+	&:focus ~ .u-input__label,
+	&:valid ~ .u-input__label {
+		transform: translateY(-20px);
+		font-size: 14px;
+	}
+}
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Alura Geek</title>
+
+	<link rel="stylesheet" href="/src/assets/css/style.css">
+
+	<script type="module" src="/src/assets/js/main.js" defer></script>
+	<script type="module" src="/src/assets/js/modules/generateCardAll.js" defer></script>
+
+</head>
+<body>
+
+	<header data-header></header>
+
+	<main class="l-main__container">
+		<div class="l-container">
+			<section data-search-product style="display: flex;flex-direction: row;"></section>
+			
+			<section>
+				<div class="l-title__container">
+					<h2 class="u-title__section">Todos os produtos</h2>
+					<a class="c-button is-disable" href="add-products.html" data-check-login>Adicionar Produtos</a>
+				</div>
+
+				<div class="u-card__container" data-all-products></div>
+			</section>
+		</div>
+	</main>
+
+	<footer data-footer ></footer>
+	<div data-modal ></div>
+
+</body>
+</html>

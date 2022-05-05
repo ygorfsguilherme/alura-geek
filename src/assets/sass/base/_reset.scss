@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li, a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	color: inherit;
+}
+
+html {
+	display: flex;
+	font-family: "Raleway Regular";
+	font-weight: 500;
+	justify-content: center;
+}
+
+body {
+	display: flex;
+	background: $black50;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 1440px;
+	width: 100%;
+	position: relative;
+}
+
+header, main {
+	display: flex;
+	justify-content: center;
+}
+
+header {
+	background: $white;
+}

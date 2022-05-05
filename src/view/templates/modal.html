@@ -1,0 +1,55 @@
+<div class="modal__container">	
+	<div class="modal">
+		<div class="modal__close" data-modal="close">X</div>
+
+		<div class="input__file__container">
+			<div class="input__drop" data-drop>
+				<span class="img" ></span>
+				<p></p>
+			</div>
+
+			<span class="or">ou</span>
+
+			<label class="input__file__label" for="file">
+				Escolha uma imagem
+			</label>
+
+			<input hidden type="file" id="file">
+		</div>
+
+		<div class="u-input__container">			
+			<label class="u-input__label" for="name">Nome do produto</label>
+			<input class="u-input" type="text" id="name" required data-update-product="PRODUCT">
+		</div>
+
+		<div class="u-input__container" >			
+			<label class="u-input__label" for="price">Preço do produto</label>
+			<input class="u-input" type="text" id="price" pattern="[-9]\d{0,2}(?:\.\d{3})*,\d{2}" required data-update-product="PRICE">
+		</div>
+
+		<div class="u-select__container box">
+			<label class="u-select__title" for="category">Categoria</label>
+
+			<div class="u-select__category">
+				<div class="u-select__item">					
+					<input type="radio" id="diversos" name="category" value="diversos" checked/>
+					<label for="diversos">Diversos</label>
+				</div>
+
+				<div class="u-select__item">
+					<input type="radio" id="consoles" name="category" value="consoles"/>
+					<label for="consoles">Consoles</label>
+				</div>
+
+				<div class="u-select__item">
+					<input type="radio" id="starwars" name="category" value="starwars"/>
+					<label for="starwars">Star Wars</label>
+				</div>
+			</div>
+		</div>
+
+		<textarea class="u-textarea" placeholder="Descrição do produto" data-update-product="DESCRIPTION"></textarea>
+
+		<button class="u-button" type="submit" data-update-product='update'>Atualizar</button>
+	</div>
+</div>

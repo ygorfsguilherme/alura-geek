@@ -1,0 +1,56 @@
+.l-navbar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 115px;
+	max-width: 1136px;
+	margin: 0 20px;
+	width: 100%;
+	position: relative;
+
+	.c-logo {
+		width: 133px;
+	}
+
+	.c-button {
+		background: $white;
+		border: 1px solid $blue;
+		color: $blue;
+	}
+}
+
+@media screen and (min-width: 0) {
+	.l-navbar {
+		.c-logo {
+			margin-right: 6px;
+		}
+
+		.c-button__container {
+			justify-content: start;
+			order: 0;
+		}
+
+		.c-button {
+			height: 43px;
+			width: 123px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.l-navbar {
+		.c-logo {
+			margin-right: 32px;
+		}
+		
+		.c-button__container {
+			justify-content: end;
+			order: 1;
+		}
+
+		.c-button {
+			height: 51px;
+			width: 148px;
+		}
+	}
+}

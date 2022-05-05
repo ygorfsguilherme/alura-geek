@@ -1,0 +1,60 @@
+.l-register__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	max-width: 559px;
+	margin: 40px 0px;
+	
+	.c-drop__content {
+		margin-bottom: 20px;
+	}
+
+	.c-button{
+		margin-top: 10px;
+	}
+
+	.c-drop__or {
+		font-size: 24px;
+		font-weight: 500;
+	}
+}
+
+@media screen and (min-width: 0){
+	.l-register__container {
+		.c-drop__or, .c-drop__file {
+			display: none;
+		}
+	}
+
+	.l-register__container {
+		.c-drop__image::before {
+			content: url('../images/icon/add-image.svg');
+			width: 33px;
+			height: 32px;
+		}
+
+		.c-drop__message::before{
+			content: "Adicionar uma imagem para o produto";
+		}
+	}
+}
+
+@media screen and (min-width: 690px) {
+	.l-register__container {
+		.c-drop__image::before {
+			content: url('../images/icon/no-image.svg');
+			width: 33px;
+			height: 32px;
+		}
+
+		.c-drop__message::before{
+			content: "Arraste para adicionar uma imagem para o produto";
+		}
+
+		.c-drop__or, .c-drop__file {
+			display: flex;
+			margin-left: 10px;
+		}
+	}
+}
