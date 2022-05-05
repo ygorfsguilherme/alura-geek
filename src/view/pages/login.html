@@ -1,46 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<title>Alura Geek - Login</title>
+<section class="l-login__content">			
+	<h3 class="u-title__section">Iniciar Sessão</h3>
 
-	<link rel="stylesheet" href="/src/assets/css/style.css">
+	<form>
+		<div class="u-input__container">			
+			<input class="u-input" type="text" id="email" data-email required>
+			<label class="u-input__label" for="email">Escreva seu email</label>
+		</div>
 
-	<script type="module" src="/src/assets/js/main.js" defer></script>
-	<script type="module" src="/src/assets/js/modules/login.js" defer></script>
+		<div class="u-input__container">			
+			<input class="u-input" type="password" id="password" data-password required>
+			<label class="u-input__label" for="password">Escreva sua senha</label>
+		</div>
 
-</head>
-<body>
+		<span class="alert">Email/Senha invalido!</span>
 
-	<header data-header></header>
-
-	<main class="l-main__container">
-
-		<section class="l-login__content">			
-			<h3 class="u-title__section">Iniciar Sessão</h3>
-
-			<form>
-				<div class="u-input__container">			
-					<input class="u-input" type="text" id="email" data-email required>
-					<label class="u-input__label" for="email">Escreva seu email</label>
-				</div>
-
-				<div class="u-input__container">			
-					<input class="u-input" type="password" id="password" data-password required>
-					<label class="u-input__label" for="password">Escreva sua senha</label>
-				</div>
-
-				<span class="alert">Email/Senha invalido!</span>
-
-				<button class="c-button" type="submit" data-login >Entrar</button>
-			</form>
-		</section> 
-
-	</main>
-
-	<footer data-footer></footer>
-
-</body>
-</html>
+		<button data-loging class="c-button" type="submit">Entrar</button>
+	</form>
+</section> 

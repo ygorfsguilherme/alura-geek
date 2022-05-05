@@ -1,79 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<title>Alura Geek - Cadastra Produto</title>
+<section class="l-register__container">			
+	<h3 class="u-title__section">Adicionar novo produto</h3>
 
-	<link rel="stylesheet" href="/src/assets/css/style.css">
+	<div class="c-drop__content">
 
-	<script type="module" src="/src/assets/js/main.js" defer></script>
-	<script type="module" src="/src/assets/js/register.js" defer></script>
+		<div class="c-drop" data-drop>
+			<span class="c-drop__image"></span>
+			<span class="c-drop__message"></span>
+		</div>
 
-</head>
-<body>
+		<span class="c-drop__or">ou</span>
 
-	<header data-header></header>
+		<label class="c-drop__file" for="file">
+			Escolha uma imagem
+		</label>
 
-	<main class="l-main__container">
-		<section class="l-register__container">			
-			<h3 class="u-title__section">Adicionar novo produto</h3>
+		<input hidden type="file" id="file">
+	</div>
 
-			<div class="c-drop__content">
+	<div class="u-input__container">			
+		<input class="u-input" type="text" id="name" required data-produtoName>
+		<label class="u-input__label" for="name">Nome do produto</label>
+	</div>
 
-				<div class="c-drop" data-drop>
-					<span class="c-drop__image"></span>
-					<span class="c-drop__message"></span>
-				</div>
+	<div class="u-input__container" >			
+		<input class="u-input" type="text" id="price" required data-produtoPrice>
+		<label class="u-input__label" for="price">Preço do produto</label>
+	</div>
 
-				<span class="c-drop__or">ou</span>
+	<div class="u-select__container box">
+		<label class="u-select__title" for="category">Categoria</label>
 
-				<label class="c-drop__file" for="file">
-					Escolha uma imagem
-				</label>
-
-				<input hidden type="file" id="file">
+		<div class="u-select__category">
+			<div class="u-select__item">					
+				<input type="radio" id="diversos" name="category" value="diversos" checked/>
+				<label for="diversos">Diversos</label>
 			</div>
 
-			<div class="u-input__container">			
-				<input class="u-input" type="text" id="name" required data-produtoName>
-				<label class="u-input__label" for="name">Nome do produto</label>
+			<div class="u-select__item">
+				<input type="radio" id="consoles" name="category" value="consoles"/>
+				<label for="consoles">Consoles</label>
 			</div>
 
-			<div class="u-input__container" >			
-				<input class="u-input" type="text" id="price" required data-produtoPrice>
-				<label class="u-input__label" for="price">Preço do produto</label>
+			<div class="u-select__item">
+				<input type="radio" id="starwars" name="category" value="starwars"/>
+				<label for="starwars">Star Wars</label>
 			</div>
+		</div>
+	</div>
 
-			<div class="u-select__container box">
-				<label class="u-select__title" for="category">Categoria</label>
+	<textarea class="u-textarea" placeholder="Descrição do produto" data-productDescription></textarea>
 
-				<div class="u-select__category">
-					<div class="u-select__item">					
-						<input type="radio" id="diversos" name="category" value="diversos" checked/>
-						<label for="diversos">Diversos</label>
-					</div>
-
-					<div class="u-select__item">
-						<input type="radio" id="consoles" name="category" value="consoles"/>
-						<label for="consoles">Consoles</label>
-					</div>
-
-					<div class="u-select__item">
-						<input type="radio" id="starwars" name="category" value="starwars"/>
-						<label for="starwars">Star Wars</label>
-					</div>
-				</div>
-			</div>
-
-			<textarea class="u-textarea" placeholder="Descrição do produto" data-productDescription></textarea>
-
-			<button class="c-button" type="submit" data-addProduto>Adicionar Produto</button>
-		</section>
-	</main>
-
-	<footer data-footer></footer>
-
-</body>
-</html>
+	<button class="c-button" type="submit" data-addProduto>Adicionar Produto</button>
+</section>

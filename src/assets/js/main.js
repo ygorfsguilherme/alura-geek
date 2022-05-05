@@ -17,6 +17,46 @@ window.onload = function(){
 	logout()
 }
 
+let params = new URLSearchParams(window.location.search);
+const page = params.get('page')
+
+if(!page || page == 'home'){
+	loadTemplate('src/view/pages/home.html', '[data-home]');
+}
+
+if(page == 'login'){
+	loadTemplate('src/view/pages/login.html', '[data-home]');
+}
+
+if(page == 'products-all'){
+	loadTemplate('src/view/pages/all-products.html', '[data-home]');
+}
+
+if(page == 'add-product'){
+	loadTemplate('src/view/pages/add-products.html', '[data-home]');
+}
+
+if (document.querySelector('[data-page="product-all"]')){
+	document.querySelector('[data-page="product-all"]').addEventListener('click', ()=>{
+		window.location.href = '?page=products-all'
+		loadTemplate('src/view/pages/all-products.html', '[data-home]');
+	})
+}
+
+if (document.querySelector('[data-page="login"]')){
+	document.querySelector('[data-page="login"]').addEventListener('click', ()=>{
+		window.location.href = '?page=login'
+		loadTemplate('src/view/pages/login.html', '[data-home]');
+	})
+}
+
+if (document.querySelector('[data-loging]')){
+	document.querySelector('[data-loging]').addEventListener('click', ()=>{
+		window.location.href = '?page=products-all'
+		loadTemplate('src/view/pages/all-products.html', '[data-home]');
+	})
+}
+
 //import * as dataBase from "./modules/dataBase.js"
 
 
