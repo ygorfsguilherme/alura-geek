@@ -23,7 +23,4 @@ export function geneTemplate(file){
 
 loadTemplate('src/view/templates/header.html', '[data-header]');
 loadTemplate('src/view/templates/footer.html', '[data-footer]');
-
-if (document.querySelector('[data-modal]')) {
-  loadTemplate('/src/view/templates/modal.html', '[data-modal]');
-}
+loadTemplate('src/view/templates/modal.html', '[data-modal]');

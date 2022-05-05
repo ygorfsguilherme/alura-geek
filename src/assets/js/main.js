@@ -21,7 +21,9 @@ let params = new URLSearchParams(window.location.search);
 const page = params.get('page')
 
 if(!page || page == 'home'){
+	const banner = document.querySelector('[data-banner]')
 	loadTemplate('src/view/pages/home.html', '[data-home]');
+	banner.classList.remove('is-disable')
 }
 
 if(page == 'login'){
