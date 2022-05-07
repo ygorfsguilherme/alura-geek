@@ -1,0 +1,11 @@
+.c-button {
+    &--white {
+        background: $white;
+		border: 1px solid $blue;
+		color: $blue;
+
+        &:hover {
+            color: white;
+        }
+    }
+}

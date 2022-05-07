@@ -12,3 +12,11 @@
 		width: 233px;
 	}
 }
+
+@media screen and (max-width: 690px) {
+	.l-footer__content {
+		.c-logo {
+			justify-content: center;
+		}
+	}
+}

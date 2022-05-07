@@ -5,21 +5,13 @@ let btnAdd = document.querySelector('[data-check-login]')
 
 export const addProductButton = ()=>{
 	setTimeout(()=>{
-		const btnEdit = document.querySelectorAll('[data-check-edit]')
+		const btnEdit = document.querySelectorAll('[data-check="login"]')
 
 		if(checkLogin()){
+			loadTemplate('src/view/templates/adm.html', '[data-login-adm]')
 			btnEdit.forEach(btn =>{
-				btn.classList.remove('u-card__edit--disable')
+				btn.classList.remove('is-disable')
 			})
 		}
-
-		if (checkLogin()) {
-			loadTemplate('templates/adm.html', '[data-login-adm]')
-
-			if (btnAdd) {
-				btnAdd.classList.remove('is-disable')
-			}
-		}
-
 	}, 100)
 }

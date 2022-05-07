@@ -38,7 +38,7 @@
 // ==========================================================================
 // Theme
 // ==========================================================================
-//@import "theme/_global.scss";
+@import "theme/_global.scss";
 
 // Shame (hacks & dishonorable stuff)
 
@@ -49,8 +49,6 @@
 @import 'utility/card.scss';
 @import 'utility/title__section.scss';
 
-
-// Footer
 @import 'footer/footer-container.scss';
 @import 'footer/footer-container/contact-me--content.scss';
 @import 'footer/footer-container/contact-me--content/contact-me--container.scss';
@@ -58,5 +56,4 @@
 @import 'footer/footer-container/contact-me--content/contact-me--form.scss';
 @import 'footer/footer-container/contact-me--content/contact-me--form/contact-me--title.scss';
 
-// Copyright
 @import 'footer/copyright.scss';
