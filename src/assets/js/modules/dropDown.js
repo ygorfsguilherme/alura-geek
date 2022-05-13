@@ -1,43 +1,44 @@
-var preview = document.querySelector('[data-drop]')
 var inputFile = document.querySelector('#file')
 
-export const dropOver = document.querySelector('[data-drop]').addEventListener('dragover', (event)=>{
-	event.preventDefault()
-	event.stopPropagation()
-	return false
-})
-
-export const dropClick = document.querySelector('[data-drop]').addEventListener('click', (event)=>{
-	event.preventDefault()
-	event.stopPropagation()
-	inputFile.click()
-
-	return false
-})
-
-export const dropLeave = document.querySelector('[data-drop]').addEventListener('drop', (event)=>{
+setTimeout(()=>{
+	inputFile.addEventListener('change', ()=>{
+		const file = inputFile.files[0];
+		addImage(file)
+	})
 	
-	event.preventDefault()
-	event.stopPropagation()
-	const file = event.dataTransfer.files[0]
+	const dropOver = document.querySelector('[data-drop]').addEventListener('dragover', (event)=>{
+		event.preventDefault()
+		event.stopPropagation()
+		return false
+	})
 
-	addImage(file)
+	const dropLeave = document.querySelector('[data-drop]').addEventListener('drop', (event)=>{
+		event.preventDefault()
+		event.stopPropagation()
+		const file = event.dataTransfer.files[0]
 
-	return false
-})
+		addImage(file)
 
-inputFile.addEventListener('change', ()=>{
-	const file = inputFile.files[0];
-	addImage(file)
-})
+		return false
+	})
 
-function addImage(file){
-	var reader  = new FileReader();
-	
-	reader.onload =  () =>{
-		const fileUrl = reader.result
-		preview.innerHTML = `<img data-preview src="${fileUrl}">`;
+	const dropClick = document.querySelector('[data-drop]').addEventListener('click', (event)=>{
+		event.preventDefault()
+		event.stopPropagation()
+		inputFile.click()
+		return false
+	})
+
+	function addImage(file){
+		var reader  = new FileReader();
+		
+		reader.onload =  () =>{
+			let preview = document.querySelector('[data-drop]')
+			const fileUrl = reader.result
+			preview.innerHTML = `<img src="${fileUrl}" data-preview>`;
+		}
+
+		reader.readAsDataURL(file)
 	}
+}, 110);
 
-	reader.readAsDataURL(file)
-}

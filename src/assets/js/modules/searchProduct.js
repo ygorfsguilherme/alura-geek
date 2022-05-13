@@ -1,7 +1,7 @@
 import {Card} from './createCard.js'
 import {geneTemplate} from './loadHtml.js'
 import {checkLogin} from './checkLogin.js'
-import {addProductButton} from './logado.js'
+import {checkAdm} from './checkAdm.js'
 import {removeItem, modifyItem, updateItem} from './removeItem.js'
 import {showItem} from "./showItem.js"
 
@@ -23,7 +23,7 @@ export const searchBar = setTimeout(()=>{document.querySelector('[data-searchbar
 					const cards = new Card(item, geneTemplate('templates/card.html'), '[data-search-product]', 'u-card')
 					cards.create()
 
-					addProductButton()
+					checkAdm()
 					removeItem()
 					modifyItem()
 					showItem()

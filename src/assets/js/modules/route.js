@@ -1,8 +1,18 @@
 import {loadTemplate} from "./loadHtml.js"
 
-export const route = ()=>{
+export const pageActive = ()=>{
 	let params = new URLSearchParams(window.location.search);
 	const page = params.get('page')
+
+	if(!page){
+		return 'home'
+	}
+
+	return page
+}
+
+export const route = ()=>{
+	const page = pageActive()
 
 	const routePage = ['home','login','product-all', 'product-add']
 	routePage.forEach(route => {

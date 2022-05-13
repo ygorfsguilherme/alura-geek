@@ -1,7 +1,7 @@
 import {Card} from './modules/createCard.js'
 import {geneTemplate} from './modules/loadHtml.js'
+import { pageActive } from './modules/route.js';
 
-const template = geneTemplate('templates/card.html')
 const classElement = 'u-card'
 
 function generateCard(){
@@ -12,7 +12,7 @@ function generateCard(){
 	fetch('http://127.0.0.1:8000/alura-geek')
 	.then(response => response.json())
 	.then(data => {
-		const template = geneTemplate('templates/card.html')
+		const template = geneTemplate('src/view/templates/card.html')
 		let limite = 6;
 
 		data.forEach(product =>{
@@ -52,4 +52,7 @@ function generateCard(){
 	})
 }
 
-generateCard()
+
+if(pageActive() == 'home'){
+	generateCard()
+}

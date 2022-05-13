@@ -29,7 +29,7 @@
 
 	.l-register__container {
 		.c-drop__image::before {
-			content: url('../images/icon/add-image.svg');
+			content: url('../img/icon/add-image.svg');
 			width: 33px;
 			height: 32px;
 		}
@@ -43,7 +43,7 @@
 @media screen and (min-width: 690px) {
 	.l-register__container {
 		.c-drop__image::before {
-			content: url('../images/icon/no-image.svg');
+			content: url('../img/icon/no-image.svg');
 			width: 33px;
 			height: 32px;
 		}
