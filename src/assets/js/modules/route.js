@@ -14,7 +14,7 @@ export const pageActive = ()=>{
 export const route = ()=>{
 	const page = pageActive()
 
-	const routePage = ['home','login','product-all', 'product-add']
+	const routePage = ['login','products-all', 'product-add']
 	routePage.forEach(route => {
 		if(page == route){
 			const routes = `src/view/pages/${page}.html`

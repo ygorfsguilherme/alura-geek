@@ -1,3 +1,4 @@
+import { database } from "./database.js";
 import {generateID} from "./generateID.js"
 import { pageActive } from "./route.js";
 
@@ -15,7 +16,7 @@ const getInformatin = ()=>{
 }
 
 const sendInformation = ()=>{
-	fetch("http://127.0.0.1:8000/alura-geek", {
+	fetch(database(), {
 		method:'POST',
 		headers:{"Content-Type": "application/json;charset=UTF-8"},
 		body: JSON.stringify(getInformatin())

@@ -14,6 +14,7 @@ import { addProduct } from "./modules/addProduct.js"
 import * as dropDown from "./modules/dropDown.js"
 
 window.onload = function(){
+	checkAdm()
 	route()
 	user()
 	allProducts()
@@ -23,5 +24,4 @@ window.onload = function(){
 	modifyItem()
 	loging()
 	logout()
-	checkAdm()
 }

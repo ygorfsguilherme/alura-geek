@@ -1,4 +1,5 @@
 import {Card} from './modules/createCard.js'
+import { database } from './modules/database.js';
 import {geneTemplate} from './modules/loadHtml.js'
 import { pageActive } from './modules/route.js';
 
@@ -9,7 +10,7 @@ function generateCard(){
 	var consoles = 0;
 	var diversos = 0;
 
-	fetch('http://127.0.0.1:8000/alura-geek')
+	fetch(database())
 	.then(response => response.json())
 	.then(data => {
 		const template = geneTemplate('src/view/templates/card.html')

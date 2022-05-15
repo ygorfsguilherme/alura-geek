@@ -11,7 +11,7 @@ export const loging = ()=>{
 			if(email == credencilasUser.email && password == credencilasUser.password){
 				sessionStorage.setItem('logado', true)
 				window.location.href = '?page=products-all'
-				loadTemplate('src/view/pages/all-products.html', '[data-home]');
+				loadTemplate('src/view/pages/products-all.html', '[data-home]');
 			}else {
 				document.querySelector('.alert').style.display = 'flex';
 			}
