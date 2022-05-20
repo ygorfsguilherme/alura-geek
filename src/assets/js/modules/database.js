@@ -1,4 +1,10 @@
-export const database = ()=>{
+export const database = (id)=>{
     const url = 'https://alura-geek-database.herokuapp.com/alura-geek';
-    return url
+    
+    if(id){
+        const urlID = `${url}/${id}`;
+        return urlID
+    }else{
+        return url
+    }
 }

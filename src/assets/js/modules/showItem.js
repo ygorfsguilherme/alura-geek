@@ -1,36 +1,28 @@
 import {Card} from './createCard.js'
+import { database } from './database.js'
 import {geneTemplate} from './loadHtml.js'
 
 export const showProduct = (id)=>{
-	setTimeout(()=>{
-		fetch("http://127.0.0.1:8000/alura-geek")
-
-		.then(response => response.json())
-		
-		.then(data => {
-			let product = []
-			data.forEach(data =>{
-				if(data['id'] == id){
-					product.push(data)
-					const card = new Card(product, geneTemplate('templates/product.html'), '[data-product]',
-						'product__container')
-					card.create()
-				}
-			})
-
-			if(!product.length){
-				document.querySelector('[data-error]').style.display = 'flex'
-			}
-		})
-	},100)
+	fetch(database(id))
+	.then(response => response.json())
+	.then(status => {
+		if(status.id == id){
+			const product = [];
+			product.push(status)
+			const template = geneTemplate('src/view/templates/product.html')
+			const card = new Card(product, template, '[data-product]', 'c-product__area')
+			card.create()
+		}else{
+			console.log('ERROR')
+			document.querySelector('[data-error]').style.display = 'flex'
+		}
+	})
 }
 
 export const showItem = ()=>{
-	setTimeout(()=>{
-		let btn = document.querySelectorAll('[data-show-product]')
-		btn.forEach(btn => btn.addEventListener('click', (event)=>{
-			const id = event.target.parentElement.id;
-			location.href = `product.html?id=${id}`
-		}))
-	}, 100)
+	let btn = document.querySelectorAll('[data-show-product]')
+	btn.forEach(btn => btn.addEventListener('click', (event)=>{
+		const id = event.target.parentElement.id;
+		location.href = `?page=product&id=${id}`
+	}))
 }

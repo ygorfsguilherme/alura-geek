@@ -1,7 +1,9 @@
+import { checkAdm } from './modules/checkAdm.js';
 import {Card} from './modules/createCard.js'
 import { database } from './modules/database.js';
 import {geneTemplate} from './modules/loadHtml.js'
 import { pageActive } from './modules/route.js';
+import { showItem } from './modules/showItem.js';
 
 const classElement = 'u-card'
 
@@ -50,6 +52,8 @@ function generateCard(){
 				card.create()
 			}
 		})
+
+		showItem()
 	})
 }
 

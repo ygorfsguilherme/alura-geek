@@ -1,4 +1,5 @@
 import {Card} from './modules/createCard.js'
+import { database } from './modules/database.js'
 import {geneTemplate} from './modules/loadHtml.js'
 import {showProduct} from './modules/showItem.js'
 
@@ -6,8 +7,8 @@ let parans = new URLSearchParams(window.location.search)
 
 showProduct(parans.get('id'))
 
-export function generateCardOtherProducts(){
-	fetch('http://192.168.42.5:5080/products')
+export function otherProducts(){
+	fetch(database())
 	.then(response => response.json())
 	.then(data => {
 		const template = geneTemplate('templates/card.html')
@@ -26,4 +27,4 @@ export function generateCardOtherProducts(){
 	})
 }
 
-generateCardOtherProducts()
+otherProducts()

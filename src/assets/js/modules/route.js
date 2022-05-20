@@ -1,4 +1,5 @@
 import {loadTemplate} from "./loadHtml.js"
+import { showProduct } from "./showItem.js";
 
 export const pageActive = ()=>{
 	let params = new URLSearchParams(window.location.search);
@@ -11,19 +12,31 @@ export const pageActive = ()=>{
 	return page
 }
 
+const getID = ()=>{
+	let paramsId = new URLSearchParams(window.location.search);
+	const idProduct = paramsId.get('id')
+	return idProduct;
+}
+
 export const route = ()=>{
 	const page = pageActive()
 
-	const routePage = ['login','products-all', 'product-add']
+	const routePage = ['login', 'products-all', 'product-add', 'product']
 	routePage.forEach(route => {
 		if(page == route){
 			const routes = `src/view/pages/${page}.html`
 			loadTemplate(routes, '[data-home]');
+
+			if(page == 'product'){
+				showProduct(getID())
+			}
 		}
 	});
+}
 
-    const buttonCheck = document.querySelectorAll('[data-page]')
-    buttonCheck.forEach( btn =>{
+export const buttonCheck = ()=>{
+	const btnCheck = document.querySelectorAll('[data-page]')
+	btnCheck.forEach( btn =>{
 	btn.addEventListener('click', (event)=>{
 		let page = event.target.getAttribute('data-page')
 		
@@ -31,15 +44,14 @@ export const route = ()=>{
 			page = 'home'
 		}
 
-		const local = `src/view/pages/${page}.html`
-
 		window.location.href = `?page=${page}`
-		loadTemplate(local, '[data-home]');
+		loadTemplate(`src/view/pages/${page}.html`, '[data-home]');
 		
 		if(page == 'home'){
 			const banner = document.querySelector('[data-banner]')
 			banner.classList.remove('is-disable')
 		}
+
+		})
 	})
-})
 }

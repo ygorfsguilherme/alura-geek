@@ -1,0 +1,31 @@
+.c-product__area {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+
+	.u-card__image {
+		width: 400px;
+		height: 400px;
+		margin-right: 10px;
+	}
+
+	.product__title, .product__price{
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+	
+	.product__description {
+		margin-top: 10px;
+		width: 100%;
+	}
+
+}
+
+
+@media screen and (min-width: 0) {
+	.product__container {flex-direction: column;}
+}
+
+@media screen and (min-width: 720px) {
+	.product__container {flex-direction: row;}
+}

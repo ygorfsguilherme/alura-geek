@@ -1,4 +1,4 @@
-export const loging = ()=>{
+export const logging = ()=>{
 	if(document.querySelector('[data-loging]')){
 		document.querySelector('[data-loging]').addEventListener('click', (event)=>{
 			event.preventDefault()
@@ -15,11 +15,11 @@ export const loging = ()=>{
 			}else {
 				document.querySelector('.alert').style.display = 'flex';
 			}
-		});
+		})
 	}
 }
 
-export const logout = ()=>{setTimeout(()=>{
+export const logout = ()=>{
 	const exit = document.querySelector('[data-exit]')
 	if(exit){
 		exit.addEventListener('click', ()=>{
@@ -27,4 +27,4 @@ export const logout = ()=>{setTimeout(()=>{
 			location.reload()
 		})
 	}
-}, 100)}
+}

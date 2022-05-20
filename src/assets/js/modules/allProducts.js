@@ -1,6 +1,8 @@
+import { modoAdm } from "./checkAdm.js"
 import {Card} from "./createCard.js"
 import { database } from "./database.js"
 import {geneTemplate} from "./loadHtml.js"
+import { showItem } from "./showItem.js"
 
 export function allProducts(){
 	const template = geneTemplate('src/view/templates/card.html')
@@ -16,6 +18,8 @@ export function allProducts(){
 				const cards = new Card(item, template, '[data-all-products]', 'u-card')
 				cards.create()
 			})
+			modoAdm()
+			showItem()
 		})
 	}
 }

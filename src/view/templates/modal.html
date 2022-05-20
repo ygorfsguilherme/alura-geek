@@ -7,7 +7,7 @@
 		<div class="c-drop__content">
 	
 			<div class="c-drop" data-drop>
-				<span class="c-drop__image"></span>
+				<span class="c-drop__image" data-preview></span>
 				<span class="c-drop__message"></span>
 			</div>
 	
@@ -21,12 +21,12 @@
 		</div>
 	
 		<div class="u-input__container">			
-			<input class="u-input" type="text" id="name" required data-produtoName>
+			<input class="u-input" type="text" id="name" required data-update-product="PRODUCT">
 			<label class="u-input__label" for="name">Nome do produto</label>
 		</div>
 	
 		<div class="u-input__container" >			
-			<input class="u-input" type="text" id="price" required data-produtoPrice>
+			<input class="u-input" type="text" id="price" required data-update-product="PRICE">
 			<label class="u-input__label" for="price">Preço do produto</label>
 		</div>
 	
@@ -35,7 +35,7 @@
 	
 			<div class="u-select__category">
 				<div class="u-select__item">					
-					<input type="radio" id="diversos" name="category" value="diversos" checked/>
+					<input type="radio" id="diversos" name="category" value="diversos"/>
 					<label for="diversos">Diversos</label>
 				</div>
 	
@@ -51,7 +51,7 @@
 			</div>
 		</div>
 	
-		<textarea class="u-textarea" placeholder="Descrição do produto" data-productDescription></textarea>
+		<textarea class="u-textarea" placeholder="Descrição do produto" data-update-product="DESCRIPTION"></textarea>
 		
 
 		<button class="u-button" type="submit" data-update-product='update'>Atualizar</button>
