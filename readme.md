@@ -5,7 +5,7 @@ Alura Geek é uma e-commerce que une uma gama de itens da cultura geek. O objeti
 E possível testa o projeto link => [Alura Geek](https://ygorfsguilherme.github.io/alura-geek/).
 Para ter acesso a funcões como, adicionar, remover e excluir produtos da loja, e preciso fazer um login:
 
-e-mail: alura@email.com
+e-mail: alura@email.com &nbsp;
 senha: 123456
 
 *obs: caso precise executar o projeto em sua maquina, instruções a baixo.*
