@@ -8,6 +8,20 @@
 	width: 100%;
 	height: 100%;
 	z-index: 20;
+
+	.c-button {
+		height: 51px;
+		margin-top: 10px;
+	}
+
+	.c-drop {
+		margin-bottom: 20px;
+	}
+
+	.c-drop__or {
+		font-size: 24px;
+		font-weight: 500;
+	}
 }
 
 .modal {

@@ -1,59 +1,57 @@
-<div class="modal__container">	
-	<div class="modal">
-		<div class="modal__close" data-modal="close">X</div>
-	
-		<h3 class="u-title__section">Editar produto</h3>
-	
-		<div class="c-drop__content">
-	
-			<div class="c-drop" data-drop>
-				<span class="c-drop__image" data-preview></span>
-				<span class="c-drop__message"></span>
-			</div>
-	
-			<span class="c-drop__or">ou</span>
-	
-			<label class="c-drop__file" for="file">
-				Escolha uma imagem
-			</label>
-	
-			<input hidden type="file" id="file">
-		</div>
-	
-		<div class="u-input__container">			
-			<input class="u-input" type="text" id="name" required data-update-product="PRODUCT">
-			<label class="u-input__label" for="name">Nome do produto</label>
-		</div>
-	
-		<div class="u-input__container" >			
-			<input class="u-input" type="text" id="price" required data-update-product="PRICE">
-			<label class="u-input__label" for="price">Preço do produto</label>
-		</div>
-	
-		<div class="u-select__container box">
-			<label class="u-select__title" for="category">Categoria</label>
-	
-			<div class="u-select__category">
-				<div class="u-select__item">					
-					<input type="radio" id="diversos" name="category" value="diversos"/>
-					<label for="diversos">Diversos</label>
-				</div>
-	
-				<div class="u-select__item">
-					<input type="radio" id="consoles" name="category" value="consoles"/>
-					<label for="consoles">Consoles</label>
-				</div>
-	
-				<div class="u-select__item">
-					<input type="radio" id="starwars" name="category" value="starwars"/>
-					<label for="starwars">Star Wars</label>
-				</div>
-			</div>
-		</div>
-	
-		<textarea class="u-textarea" placeholder="Descrição do produto" data-update-product="DESCRIPTION"></textarea>
-		
+<div class="modal">
+	<div class="modal__close" data-modal="close">X</div>
 
-		<button class="u-button" type="submit" data-update-product='update'>Atualizar</button>
+	<h3 class="u-title__section">Editar produto</h3>
+
+	<div class="c-drop__content">
+
+		<div class="c-drop" data-drop>
+			<span class="c-drop__image" data-preview></span>
+			<span class="c-drop__message"></span>
+		</div>
+
+		<span class="c-drop__or">ou</span>
+
+		<label class="c-drop__file" for="file">
+			Escolha uma imagem
+		</label>
+
+		<input hidden type="file" id="file">
 	</div>
+
+	<div class="u-input__container">			
+		<input class="u-input" type="text" id="name" required data-update-product="PRODUCT">
+		<label class="u-input__label" for="name">Nome do produto</label>
+	</div>
+
+	<div class="u-input__container" >			
+		<input class="u-input" type="text" id="price" required data-update-product="PRICE">
+		<label class="u-input__label" for="price">Preço do produto</label>
+	</div>
+
+	<div class="u-select__container box">
+		<label class="u-select__title" for="category">Categoria</label>
+
+		<div class="u-select__category">
+			<div class="u-select__item">					
+				<input type="radio" id="diversos" name="category" value="diversos"/>
+				<label for="diversos">Diversos</label>
+			</div>
+
+			<div class="u-select__item">
+				<input type="radio" id="consoles" name="category" value="consoles"/>
+				<label for="consoles">Consoles</label>
+			</div>
+
+			<div class="u-select__item">
+				<input type="radio" id="starwars" name="category" value="starwars"/>
+				<label for="starwars">Star Wars</label>
+			</div>
+		</div>
+	</div>
+
+	<textarea class="u-textarea" placeholder="Descrição do produto" data-update-product="DESCRIPTION"></textarea>
+	
+
+	<button class="c-button" type="submit" data-update-product='update'>Atualizar</button>
 </div>

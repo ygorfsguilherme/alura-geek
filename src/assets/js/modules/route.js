@@ -46,11 +46,6 @@ export const buttonCheck = ()=>{
 
 		window.location.href = `?page=${page}`
 		loadTemplate(`src/view/pages/${page}.html`, '[data-home]');
-		
-		if(page == 'home'){
-			const banner = document.querySelector('[data-banner]')
-			banner.classList.remove('is-disable')
-		}
 
 		})
 	})
