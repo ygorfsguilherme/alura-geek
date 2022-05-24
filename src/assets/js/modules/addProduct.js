@@ -19,7 +19,7 @@ const setAddProduct = ()=>{
 	fetch(database(), {
 		method:'POST',
 		headers:{"Content-Type": "application/json;charset=UTF-8"},
-		body: JSON.stringify(getInformatin())
+		body: JSON.stringify(getInformationProduct())
 	})
 	.then(response => response.json())
 	.then(status => {

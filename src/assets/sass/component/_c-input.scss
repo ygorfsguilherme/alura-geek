@@ -1,9 +1,9 @@
-.u-input__container {
+.c-input__container {
 	position: relative;
 	margin-bottom: 16px;
 }
 
-.u-input__label {
+.c-input__label {
 	position: absolute;
 	color: $graylight;
 	margin: 4px;
@@ -11,7 +11,7 @@
 	font-size: 16px;
 }
 
-.u-input {
+.c-input {
 	box-sizing: border-box;
 	box-shadow: 0px 2px 2px 0px rgba(0,0,0, 0.3);
 	border: none;
@@ -22,8 +22,8 @@
 	outline: 0;
 	height: 56px;
 
-	&:focus ~ .u-input__label,
-	&:valid ~ .u-input__label {
+	&:focus ~ .c-input__label,
+	&:valid ~ .c-input__label {
 		transform: translateY(-20px);
 		font-size: 14px;
 	}

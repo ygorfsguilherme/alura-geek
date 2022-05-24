@@ -37,7 +37,7 @@ export class Card{
     element.innerHTML = temp
 
     let image = document.createElement('img')
-    image.classList.add('u-card__image')
+    image.classList.add('c-card__image')
     image.setAttribute('src', this.image)
 
     element.prepend(image)
