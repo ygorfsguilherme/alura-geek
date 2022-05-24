@@ -1,4 +1,5 @@
 import {loadTemplate} from "./loadHtml.js"
+import { otherProducts } from "./otherProducts.js";
 import { showProduct } from "./showItem.js";
 
 export const pageActive = ()=>{
@@ -29,6 +30,7 @@ export const route = ()=>{
 
 			if(page == 'product'){
 				showProduct(getID())
+				otherProducts()
 			}
 		}
 	});

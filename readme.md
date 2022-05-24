@@ -14,6 +14,7 @@ senha: 123456
 Instalar dependências, é preciso ter instalado o __npm__ no seu sistema operacional e em seguida no diretorio do projeto roda o seguinte comando:
 ```
 npm install
-
+```
+```
 gulp --watch
 ```

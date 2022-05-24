@@ -1,4 +1,4 @@
-.u-select__container {
+.c-select__container {
 	color: $gray;
 	display: flex;
 	flex-direction: column;
@@ -10,18 +10,18 @@
 	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
 }
 
-.u-select__title{
+.c-select__title{
 	margin-bottom: 8px;
 	font-weight: 600;
 }
 
-.u-select__category {
+.c-select__category {
 	display: flex;
 	flex-direction: row;
 	margin-top: 6px;
 }
 
-.u-select__item {
+.c-select__item {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -35,15 +35,15 @@
 
 
 @media screen and (max-width: 425px) {
-	.u-select__container {
+	.c-select__container {
 		height: auto;
 	}
 
-	.u-select__category {
+	.c-select__category {
 		flex-direction: column;
 	}
 
-	.u-select__item {
+	.c-select__item {
 		justify-content: start;
 		margin-bottom: 8px;
 	}

@@ -18,6 +18,7 @@ export function allProducts(){
 				const cards = new Card(item, template, '[data-all-products]', 'u-card')
 				cards.create()
 			})
+			
 			modoAdm()
 			showItem()
 		})

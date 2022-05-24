@@ -1,17 +1,13 @@
-import {Card} from './modules/createCard.js'
-import { database } from './modules/database.js'
-import {geneTemplate} from './modules/loadHtml.js'
-import {showProduct} from './modules/showItem.js'
-
-let parans = new URLSearchParams(window.location.search)
-
-showProduct(parans.get('id'))
+import {Card} from './createCard.js'
+import { database } from './database.js'
+import {geneTemplate} from './loadHtml.js'
+import { showItem } from './showItem.js'
 
 export function otherProducts(){
 	fetch(database())
 	.then(response => response.json())
 	.then(data => {
-		const template = geneTemplate('templates/card.html')
+		const template = geneTemplate('src/view/templates/card.html')
 		let limite = 6;
 
 		if(data.length < 6){
@@ -24,7 +20,7 @@ export function otherProducts(){
 			const card = new Card(otherProducts, template, '[data-card-other-product]', 'u-card')
 			card.create()
 		}
+
+		showItem()
 	})
 }
-
-otherProducts()
