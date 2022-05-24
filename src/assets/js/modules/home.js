@@ -1,13 +1,11 @@
-import { checkAdm } from './modules/checkAdm.js';
-import {Card} from './modules/createCard.js'
-import { database } from './modules/database.js';
-import {geneTemplate} from './modules/loadHtml.js'
-import { pageActive } from './modules/route.js';
-import { showItem } from './modules/showItem.js';
+import {Card} from './createCard.js'
+import { database } from './database.js';
+import {geneTemplate} from './loadHtml.js'
+import { showItem } from './showItem.js';
 
 const classElement = 'u-card'
 
-function generateCard(){
+export const homePage = ()=>{
 	var starwars = 0;
 	var consoles = 0;
 	var diversos = 0;
@@ -55,9 +53,4 @@ function generateCard(){
 
 		showItem()
 	})
-}
-
-
-if(pageActive() == 'home'){
-	generateCard()
 }

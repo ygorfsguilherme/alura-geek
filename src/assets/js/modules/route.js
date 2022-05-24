@@ -1,6 +1,7 @@
 import {loadTemplate} from "./loadHtml.js"
 import { otherProducts } from "./otherProducts.js";
 import { showProduct } from "./showItem.js";
+import { homePage } from "./home.js"
 
 export const pageActive = ()=>{
 	let params = new URLSearchParams(window.location.search);
@@ -22,7 +23,7 @@ const getID = ()=>{
 export const route = ()=>{
 	const page = pageActive()
 
-	const routePage = ['login', 'products-all', 'product-add', 'product']
+	const routePage = ['login', 'products-all', 'product-add', 'product', 'home']
 	routePage.forEach(route => {
 		if(page == route){
 			const routes = `src/view/pages/${page}.html`
@@ -31,6 +32,10 @@ export const route = ()=>{
 			if(page == 'product'){
 				showProduct(getID())
 				otherProducts()
+			}
+
+			if (page == 'home') {
+				homePage()
 			}
 		}
 	});
