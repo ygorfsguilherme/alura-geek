@@ -1,21 +1,20 @@
-## Descrição
-Alura Geek é uma e-commerce que une uma gama de itens da cultura geek. O objetivo do projeto é uma forma de mostra minhas habilidades na construção de um e-commerce, proposto no curso da ALura + Oracle - ONE, foi utilizado feramentas como html, css/sass javascript, metodológia como BEM, SMACSS, Agil.
+# Sobre
+Alura Geek é uma e-commerce que une uma gama de itens da cultura nerd, lá você poderá encontra produto como caneca, além jogos e consoles.
 
-## Executar
-E possível testa o projeto online => [aqui](https://ygorfsguilherme.github.io/alura-geek/).
-Para ter acesso a funcões como, adicionar, remover e excluir produtos da loja, e preciso fazer um login:
+# Ferramentas Utilizadas
+No desenvolvimento foi utilizado como estrutura HTML, CSS/SASS na estilização, na lógica e nas funções o JavaScript, o Trello como apoio as informações como também o figma na prototipagem de projeto, assim também como metodológia BEM, SMACSS, Agil.
 
-```
-e-mail: alura@email.com
-senha: 123456
-```
+# Objetivo
+O projeto é uma forma de mostra minhas habilidades na construção de um e-commerce, proposto no curso da Alura, esse projeto e totalmente educacional.
 
-*obs: caso precise executar o projeto em sua maquina, instruções a baixo.*
+# Executar / Testar
+E possível testa o projeto [aqui](https://ygorfsguilherme.github.io/alura-geek/). Para ter acesso a funcões como, adicionar, remover e excluir produtos da loja, e preciso fazer um login:
 
-Instalar dependências, é preciso ter instalado o __npm__ no seu sistema operacional e em seguida no diretório raiz do projeto, roda os seguintes comandos:
+e-mail:
 ```
-npm install
+alura@email.com
 ```
+senha: 
 ```
-gulp --watch
+123456
 ```
