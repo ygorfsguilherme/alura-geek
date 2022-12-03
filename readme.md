@@ -5,8 +5,8 @@ Alura Geek é uma e-commerce que une uma gama de itens da cultura nerd, lá voc�
 No desenvolvimento foi utilizado o Trello como apoio as informações como também o figma na prototipagem de projeto, assim também como metodológia BEM, SMACSS, Agil.
 
 - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="widht:20px; height:20px;" /> HTML 5
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="widht:20px; height:20px;" /> CSS/Sass
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" style="widht:20px; height:20px;" /> JavaScript
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="widht:20px; height:20px;" /> JavaScript
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" style="widht:20px; height:20px;" /> CSS/Sass
 
 # <img src="https://cdn-icons-png.flaticon.com/512/3463/3463662.png" style="widht:30px; height:30px;" /> Objetivo
 O projeto é uma forma de mostra minhas habilidades na construção de um e-commerce, proposto no curso da Alura, esse projeto e totalmente educacional.
